@@ -1,0 +1,50 @@
+{
+  "name": "@websocket-counter/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npx nx serve backend\" \"npx nx serve frontend\""
+  },
+  "private": true,
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "6.29.0",
+    "socket.io-client": "^4.8.1",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@nx/esbuild": "20.8.1",
+    "@nx/js": "20.8.1",
+    "@nx/node": "^20.8.1",
+    "@nx/react": "20.8.1",
+    "@nx/vite": "20.8.1",
+    "@nx/web": "20.8.1",
+    "@nx/workspace": "20.8.1",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/node": "^20.0.0",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitest/ui": "^3.0.0",
+    "autoprefixer": "10.4.13",
+    "esbuild": "^0.19.2",
+    "jiti": "2.4.2",
+    "jsdom": "~22.1.0",
+    "nx": "20.8.1",
+    "postcss": "8.4.38",
+    "tailwindcss": "3.4.3",
+    "tslib": "^2.3.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
